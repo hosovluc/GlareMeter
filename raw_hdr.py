@@ -52,6 +52,8 @@ for img in images:
 merge_debevec = cv2.createMergeDebevec()
 hdr = merge_debevec.process(ldr_images, times=np.array([1.0/e for e in exposures], dtype=np.float32))
 
+cv2.imwrite('halooo.hdr', hdr)
+
 # Tonemapping: convert HDR to 8-bit displayable image
 tonemap = cv2.createTonemap(gamma=2.2)
 ldr = tonemap.process(hdr)
