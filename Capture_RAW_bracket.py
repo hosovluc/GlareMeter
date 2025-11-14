@@ -29,18 +29,19 @@ picam2.configure(config)
 picam2.start()
 time.sleep(2) # stabilize the camera, sleep always in seconds
 
-num_img = 5
-exp = [140, 1703, 20721, 252095, 3066975] # exposure times in microseconds
+num_img = 9
+# exp = [140, 1703, 20721, 252095, 3066975] # exposure times in microseconds
+exp = [130, 457, 1611, 5672, 19970,70303, 247498, 871301 ,3066985]
 
 for i in range(0, num_img):
     picam2.set_controls({"ExposureTime":exp[i]})
     #time.sleep(2*exp[i]/1e6) # wait 2-3 frames to apply the changes
-    time.sleep(2)
+    time.sleep(4)
     #print(2*exp[i]/1e6)
     print("Exp:",exp[i])
     
     # Capture and save RAW (.dng)   
-    filename = f"Raw_{i}.dng"
+    filename = f"TEST_{i}.dng"
     full_path = os.path.join(dirname, filename)
     picam2.capture_file(full_path, name="raw")
 #   raw_array = picam2.capture_array("raw")
@@ -50,14 +51,14 @@ for i in range(0, num_img):
     meta = picam2.capture_metadata()
     print("ExposureTime:", meta["ExposureTime"])
     
-#     # Capture and save JPEG
-#     filename = f"jpg_{i}.jpg"
-#     full_path = os.path.join(dirname, filename)
-#     picam2.capture_file(full_path)
-#     print("Saved:", filename)
-#     
-#     meta = picam2.capture_metadata()
-#     print("ExposureTime:", meta["ExposureTime"])
+    # Capture and save JPEG
+    filename = f"test1_{i}.jpg"
+    full_path = os.path.join(dirname, filename)
+    picam2.capture_file(full_path)
+    print("Saved:", filename)
+    
+    meta = picam2.capture_metadata()
+    print("ExposureTime:", meta["ExposureTime"])
 
 
 
