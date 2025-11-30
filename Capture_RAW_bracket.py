@@ -9,7 +9,7 @@ import time
 import cv2
 
 # Folder for raw data
-dirname = "img_files"
+dirname = "imgs"
 os.makedirs(dirname, exist_ok = True) # create dir if doesnt exist
 
 # Camera settings
@@ -29,9 +29,9 @@ picam2.configure(config)
 picam2.start()
 time.sleep(2) # stabilize the camera, sleep always in seconds
 
-num_img = 9
-# exp = [140, 1703, 20721, 252095, 3066975] # exposure times in microseconds
-exp = [130, 457, 1611, 5672, 19970,70303, 247498, 871301 ,3066985]
+num_img = 5
+# ex = [140, 1703, 20721, 252095, 3066975] # exposure times in microseconds
+exp = [130, 1611, 19970, 247498, 3066985]
 
 for i in range(0, num_img):
     picam2.set_controls({"ExposureTime":exp[i]})
