@@ -8,9 +8,12 @@ import os
 import time
 import cv2
 
+
 # Folder for raw data
-dirname = "imgs"
-os.makedirs(dirname, exist_ok = True) # create dir if doesnt exist
+# dirname = "imgs"
+# os.makedirs(dirname, exist_ok = True) # create dir if doesnt exist
+
+dirname = os.getcwd()
 
 # Camera settings
 picam2 = Picamera2() # creating the object

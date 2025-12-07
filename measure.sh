@@ -15,12 +15,12 @@ echo "You pressed: $key"
 echo ""  # newline after key press
 
 if [[ $key == "m" || $key == "M" ]]; then
-        echo "You selected one-time measurement"
-        # 1 - CAPTURE
-        python3 "/home/hosovluc/Documents/GLARE METER/Scripts/Capture_RAW_bracket.py"
-        # 2 - HDR GEN
-        python3 "/home/hosovluc/Documents/GLARE METER/Scripts/auto_hdrgen.py" 
-
+	echo "You selected one-time measurement"
+	# 1 - CAPTURE
+	python3 "/home/hosovluc/Documents/GLAREMETER/Scripts/Capture_RAW_bracket.py"
+	# 2 - HDR GEN
+	python3 "/home/hosovluc/Documents/GLAREMETER/Scripts/auto_hdrgen.py" 
+		
 
 
 elif [[ $key == "l" || $key == "L" ]]; then
