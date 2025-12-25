@@ -26,8 +26,6 @@ into HDR format, and evaluates glare using the DGP metric.
 ## 3. Hardware Setup
 
 ### 3.1 Camera Orientation
-⚠ **Important**
-
 The camera must be mounted **with the connection cable pointing downward**.
 
 This orientation is critical because the **position index** used in the DGP
