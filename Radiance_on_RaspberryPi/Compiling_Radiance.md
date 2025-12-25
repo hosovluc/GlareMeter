@@ -29,4 +29,5 @@ tar -xf rad6R0supp.tar.gz
    -  and go through the questions during the installation
    -  after the instalation is done, will be the source code files copied to ```bash /usr/local/bin```
    -  then e.g. evalglare can be executed from anywhere
-   -   
+
+Source: https://github.com/ZAWAJAN/Acapulco-Sensors/blob/main/Camera/docs/03_Camera_Software_Radiance_Compile.md
