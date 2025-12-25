@@ -45,7 +45,9 @@ Incorrect camera orientation may lead to inaccurate glare evaluation results.
 2.  Open RealVNC and connect.
 
 ### 4.2 Running the code
-1. Run the file measure.sh at the path home/Documents/GLARE_METER/Bash_sctipts
+1. Run the file measure.sh at the home path
    - you can run it in the command line using command: bash measure.sh
+2. The result will be shown in the command line
+3. Photos from the measurement are saved at home/measurement 
 
 
