@@ -10,7 +10,6 @@ output_name = "output_hdrgen"
 
 cmds = [
     f'exiftool -overwrite_original -ISO=100 *.jpg',
-    # f'exiftool -overwrite_original -ISO -ApertureValue>FNumber *.jpg',
     f'exiftool -overwrite_original -FNumber=1.8 *.jpg'
 ]
 
