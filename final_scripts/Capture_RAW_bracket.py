@@ -1,17 +1,12 @@
 # === Capture bracketing RAWs ===
 # Author: Lucie Hosova
-# Date: 17-10-2025
+# Date: 17-12-2025
 
 from picamera2 import Picamera2
 from pprint import *
 import os
 import time
 import cv2
-
-
-# Folder for raw data
-# dirname = "imgs"
-# os.makedirs(dirname, exist_ok = True) # create dir if doesnt exist
 
 dirname = os.getcwd()
 
