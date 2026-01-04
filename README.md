@@ -24,8 +24,8 @@ The practical part of the work focuses on:
 ---
 
 ## Tools and Technologies
-- **Raspberry Pi** – control unit of the measurement device  
-- **Fisheye camera** – acquisition of the full field of view  
+- **Raspberry Pi** – control unit of the measurement device (RPi 4, model B)
+- **Fisheye camera** – acquisition of the full field of view (Waveshare OV5647)
 - **RADIANCE** – lighting simulation and analysis software package  
 - **Evalglare** – tool for computing DGP from HDR images  
 - **Bash scripts** – automation of measurement and evaluation workflows  
