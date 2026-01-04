@@ -8,7 +8,7 @@ dir=`date +"%Y%m%d_%H%M"`
 mkdir $dir
 cd $dir
 
-echo "Press M for one-time measuring or L for long-term measurement."
+echo "Press M for one-time measurement"
 read -n 1 key  # waits for a single key press
 echo "You pressed: $key"
 
@@ -21,10 +21,6 @@ if [[ $key == "m" || $key == "M" ]]; then
 	# 2 - HDR GEN
 	python3 "/home/hosovluc/Documents/GLAREMETER/Scripts/auto_hdrgen.py" 
 		
-
-
-elif [[ $key == "l" || $key == "L" ]]; then
-    echo "You selected Option B"
 else
     echo "Invalid key pressed"
 fi
